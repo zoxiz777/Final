@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">afinal</string>
+    <string name="menu_bmi_calculator_button">Kalkulator BMI</string>
+    <string name="menu_tip_calculator_button">Kalkulator Napiwków</string>
+    <string name="menu_main_label">Menu Główne</string>
+    <string name="bmi_fragment_label">Kalkulator BMI</string>
+    <string name="bmi_weight_hint">Waga (kg)</string>
+    <string name="bmi_height_hint">Wzrost (cm)</string>
+    <string name="bmi_calculate_button">Oblicz BMI</string>
+    <string name="bmi_result_prefix">BMI: </string> <!--   to twarda spacja -->
+    <string name="bmi_to_tip_calculator_button">Do Kalkulatora Napiwków</string>
+    <string name="bmi_back_to_menu_button">Powrót do Menu</string>
+    <string name="bmi_error_empty_fields">Proszę podać wagę i wzrost</string>
+    <string name="bmi_error_height_zero">Wzrost musi być większy od 0</string>
+    <string name="bmi_error_invalid_input">Nieprawidłowe dane</string>
+    <string name="tip_fragment_label">Kalkulator Napiwków</string>
+    <string name="tip_bill_amount_hint">Kwota Rachunku</string>
+    <string name="tip_percentage_hint">Procent Napiwku (%)</string>
+    <string name="tip_calculate_button">Oblicz Napiwek</string>
+    <string name="tip_result_prefix">Napiwek: </string>
+    <string name="tip_total_prefix">Razem: </string>
+    <string name="tip_to_bmi_calculator_button">Do Kalkulatora BMI</string>
+    <string name="tip_back_to_menu_button">Powrót do Menu</string>
+    <string name="tip_error_empty_bill">Proszę podać kwotę rachunku</string>
+    <string name="tip_error_invalid_percentage">Nieprawidłowy procent napiwku</string>
+    <string name="tip_error_invalid_bill_amount">Nieprawidłowa kwota rachunku</string>
+</resources>

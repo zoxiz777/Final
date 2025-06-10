@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.afinal.MenuFragment"
+        android:label="@string/menu_main_label"
+        tools:layout="@layout/fragment_menu">
+    <action
+        android:id="@+id/action_menuFragment_to_bmiFragment"
+        app:destination="@id/bmiFragment" />
+    <action
+        android:id="@+id/action_menuFragment_to_tipFragment"
+        app:destination="@id/tipFragment" />
+</fragment>
+<fragment
+    android:id="@+id/bmiFragment"
+    android:name="com.example.afinal.BmiFragment"
+    android:label="@string/bmi_fragment_label"
+    tools:layout="@layout/fragment_bmi">
+    <action
+    android:id="@+id/action_bmiFragment_to_tipFragment"
+    app:destination="@id/tipFragment" />
+    <action
+    android:id="@+id/action_bmiFragment_to_menuFragment"
+    app:destination="@id/menuFragment"
+    app:popUpTo="@id/menuFragment"
+    app:popUpToInclusive="true"/>
+</fragment>
+<fragment
+    android:id="@+id/tipFragment"
+    android:name="com.example.afinal.TipFragment"
+    android:label="@string/tip_fragment_label"
+    tools:layout="@layout/fragment_tip">
+    <action
+        android:id="@+id/action_tipFragment_to_bmiFragment"
+        app:destination="@id/bmiFragment" />
+    <action
+        android:id="@+id/action_tipFragment_to_menuFragment"
+        app:destination="@id/menuFragment"
+        app:popUpTo="@id/menuFragment"
+        app:popUpToInclusive="true"/>
+</fragment>
+</navigation>
